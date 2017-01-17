@@ -1,3 +1,25 @@
+.container {
+  background-image: url("/Users/Dylan/Documents/code/2.2-sass-design/skateboard-images/bg.jpg"); }
 
+/*
+.container{
+  background-image: url('/Users/Dylan/Documents/code/2.2-sass-design/skateboard-images/bg.jpg');
+}
+*/
+.social-box {
+  width: 900px;
+  height: 74px; }
+  .social-box a {
+    display: inline-block;
+    height: 60px;
+    width: 60px; }
+
+.nav-bar li {
+  background-color: red;
+  text-align: center;
+  display: inline-block;
+  width: 25%;
+  height: 44px;
+  vertical-align: middle; }
 
 /*# sourceMappingURL=styles.css.map */
