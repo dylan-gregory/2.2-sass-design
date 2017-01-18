@@ -47,12 +47,20 @@
         </div>
           <div class="row">
             <div class="scrolling-header">
-              <img src="/Users/Dylan/Documents/code/2.2-sass-design/skateboard-images/top-image.png" class="img-fluid">
+              <img src="/Users/Dylan/Documents/code/2.2-sass-design/skateboard-images/peralta-logo.png" alt="">
             </div>
           </div>
           <div class="row">
             <div class="scrolling-head-select">
-              <a href="#">Whatever can be used as the dots</a>
+              <label class="radio-inline">
+                  <input type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+                </label>
+                <label class="radio-inline">
+                  <input type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+                </label>
+                <label class="radio-inline">
+                  <input type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option3">
+              </label>
             </div>
           </div>
           <div class="row">
@@ -85,23 +93,36 @@
           </div>
           <div class="row">
             <div class="skateboarders">
-                <div class="lance col-lg-4">
-                  <a href="">Lance Mountain</a>
+                <div class="row col-lg-8">
+                  <div class="col-lg-6">
+                    <a class="lance" href="">Lance Mountain</a>
+                  </div>
+                  <div class="col-lg-6">
+                    <a class="rodney" href="#">Rodney Mullin</a>
+                  </div>
+                  <div class="col-lg-12">
+                    <a class="steve" href="#">Steve Caballero</a>
+                  </div>
                 </div>
-                <div class="rodney col-lg-4">
-                  <a href="#">Rodney Mullin</a>
+              <div class="row">
+                <div class="col-lg-4">
+                  <a class="tommy" href="#">Tommy Guerrero</a>
                 </div>
-                <div class="tommy col-lg-4">
-                  <img src=""><a href="#">Tommy Guerrero</a>
-                </div>
-                <div class="steve col-lg-8">
-                  <a href="#">Steve Caballero</a>
-                </div>
+              </div>
             </div>
           </div>
           <div class="row">
             <div class="boards">
-              <a href="#"><img src="" alt="">skateboard pic</a>
+                <img src="skateboard-images/sk8-1.png">
+                <img src="skateboard-images/sk8-2.png">
+                <img src="skateboard-images/sk8-3.png">
+                <img src="skateboard-images/sk8-4.png">
+                <img src="skateboard-images/sk8-5.png">
+                <img src="skateboard-images/sk8-6.png">
+                <img src="skateboard-images/sk8-7.png">
+                <img src="skateboard-images/sk8-8.png">
+                <img src="skateboard-images/sk8-9.png">
+                <img src="skateboard-images/sk8-10.png">
             </div>
           </div>
           <div class="row">
@@ -117,10 +138,35 @@
                 </footer>
               </div>
               <div class="right col-lg-6">
-                <div class="row"><a href="#">Name</a></div>
-                <div class="row"><a href="#">Email</a></div>
-                <div class="row"><a href="#">Your Message</a></div>
-                <footer><a href="#">Submit</a></footer>
+                <form class="form-horizontal">
+                    <div class="form-group">
+                      <label for="inputName3" class="col-sm-2 control-label"></label>
+                      <div class="col-sm-10">
+                        <input type="Name" class="form-control" id="inputName3" placeholder="Name">
+                      </div>
+                    </div>
+                    <div class="form-group">
+                      <label for="inputEmail3" class="col-sm-2 control-label"></label>
+                      <div class="col-sm-10">
+                        <input type="Email" class="form-control" id="inputEmail3" placeholder="Email">
+                      </div>
+                    </div>
+                    <div class="form-group">
+                      <div class="col-sm-offset-2 col-sm-10">
+                        <div class="text-area">
+                          <textarea class="form-control" rows="3">
+
+                          </textarea>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="form-group">
+                      <div class="col-sm-offset-2 col-sm-10">
+                        <button type="submit" class="btn btn-default">SUBMIT</button>
+                      </div>
+                    </div>
+                    </form>
+
               </div>
 
           </div>

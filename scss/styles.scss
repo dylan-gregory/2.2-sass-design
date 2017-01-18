@@ -30,6 +30,7 @@ a:focus { text-decoration: none; }
 a:hover, a:active { text-decoration: none; }
 
 .social-box{
+  position: relative;
   font-size: 30px;
   text-align: right;
   i{
@@ -45,6 +46,7 @@ a:hover, a:active { text-decoration: none; }
 }
 
 .nav-bar{
+  position: relative;
 
   .button{
     background-color: $uni-red;
@@ -59,30 +61,38 @@ a:hover, a:active { text-decoration: none; }
 }
 
 .scrolling-header{
+  position: relative;
   height: 361px;
-  max-width: 100%;
   overflow: hidden;
   margin-top: 17px;
+  background-image: url('/Users/Dylan/Documents/code/2.2-sass-design/skateboard-images/top-image.png');
+  background-size: cover;
+  border: 10px solid white;
 
   img{
-    max-width: 100%;
-
-
+    text-align: center;
+    position: absolute;
+    top: 30px;
   }
+}
+
+
+.scrolling-header::before{
+  content: url('/Users/Dylan/Documents/code/2.2-sass-design/skateboard-images/grid.png');
+  display: block;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  opacity: .2;
 
 
 }
 
 
-
-
 .article-previews{
 
-
-  .preview{
-
-
-  }
 
   h1{
     font-size: 26px;
@@ -110,41 +120,114 @@ a:hover, a:active { text-decoration: none; }
 
 }
 
-.skateboarders{
 
+.skateboarders{
+  text-transform: uppercase;
+  position: relative;
+  color: white;
+  font-size: 33px;
+  font-weight: bold;
+  text-align: center;
+  height: 478px;
   a{
-    border: 5px solid white;
-    max-width: 100%;
+    color: white;
   }
 
 }
 
+
 .lance{
-
-
-    min-height: 236px;
+  display: inline-block;
+  background-image: url('/Users/Dylan/Documents/code/2.2-sass-design/skateboard-images/sk8er-4.png');
+  background-position: center right;
+  border: 5px solid white;
+  min-height: 236px;
+  width: 100%;
 
 
 }
 
 .rodney{
+  display: inline-block;
+  background-image: url('/Users/Dylan/Documents/code/2.2-sass-design/skateboard-images/sk8er-3.png');
 
+  border: 5px solid white;
   min-height: 236px;
+  width: 100%;
 
 }
 
 .tommy{
-
+  display: inline-block;
+  background-image: url('/Users/Dylan/Documents/code/2.2-sass-design/skateboard-images/sk8er-2.png');
+  background-position: center right;
+  border: 5px solid white;
   min-height: 478px;
+  width: 100%;
+
 
 }
 
 .steve{
-
+  display: inline-block;
+  background-image: url('/Users/Dylan/Documents/code/2.2-sass-design/skateboard-images/sk8er-1.png');
+  background-position: center;
+  background-size: cover;
+  border: 5px solid white;
   min-height: 236px;
+  width: 100%;
+  margin-top: 6px;
 
+}
+
+.boards{
+  height: 299px;
+  background-color: white;
+  padding-left: 50px;
+  margin-top: 27px;
+  margin-right: 10px;
+  position: relative;
+  padding-top: 12px;
+  padding-bottom: 23px;
+
+  a{
+    height: 299px;
+    width: 1150px;
+  }
+
+  img{
+    width: 62px;
+    margin-left: 13px;
+    margin-right: 26px;
+  }
+
+}
+
+.scrolling-head-select{
+  text-align: center;
+  height: 69px;
+}
+
+.radio-inline{
+  text-align: center;
 }
 
 .contact-footer{
   background-color: white;
+}
+
+.left{
+  height: 361px;
+  margin-top: 31px;
+  background-color: white;
+  margin-bottom: 71px;
+}
+
+.right{
+  height: 361px;
+  margin-top: 31px;
+  background-color: white;
+  margin-bottom: 71px;
+  padding-top: 33px;
+  padding-right: 29px;
 }
