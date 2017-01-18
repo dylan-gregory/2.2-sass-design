@@ -1,17 +1,17 @@
+
+$grid-gutter-width: 10px;
 $uni-red: #B72631;
 
-body{
+@import "../bower_components/bootstrap-sass/assets/stylesheets/bootstrap";
+
+.wrapper{
   position: relative;
   background-image: url('/Users/Dylan/Documents/code/2.2-sass-design/skateboard-images/bg.jpg');
   width: 2000px;
 }
-/*
-.container{
-  background-image: url('/Users/Dylan/Documents/code/2.2-sass-design/skateboard-images/bg.jpg');
-}
-*/
 
-body::before{
+
+.wrapper::before{
   content: '';
   display: block;
   position: absolute;
@@ -23,12 +23,6 @@ body::before{
 
 }
 
-.container{
-  width: 2000px;
-}
-
-
-
 a { text-decoration: none; color:#A2B3BE; }
 a:visited { text-decoration: none; }
 a:hover { text-decoration: none; }
@@ -36,10 +30,13 @@ a:focus { text-decoration: none; }
 a:hover, a:active { text-decoration: none; }
 
 .social-box{
-  width: 900px;
-  height: 74px;
+  font-size: 30px;
+  text-align: right;
+  i{
+
+  }
   a{
-    display: inline-block;
+    background-color: blue;
     height: 60px;
     width: 60px;
   }
@@ -49,59 +46,105 @@ a:hover, a:active { text-decoration: none; }
 
 .nav-bar{
 
-  li{
+  .button{
     background-color: $uni-red;
     text-align: center;
     font-weight: bold;
-    display: inline-block;
-    width: 25%;
     height: 44px;
     vertical-align: middle;
     font-size: 12px;
+    border-bottom: 4px solid rgba(0, 0, 0, 0.2);
   }
+
 }
 
 .scrolling-header{
-
+  height: 361px;
+  max-width: 100%;
+  overflow: hidden;
+  margin-top: 17px;
 
   img{
     max-width: 100%;
-    padding-left: 40px;
+
+
   }
+
 
 }
 
+
+
+
 .article-previews{
 
-  li{
-    display: inline-block;
-    position: relative;
-    background-color: white;
-    height: 354px;
-    width: 32%;
-    border-bottom: 4px solid rgba(0, 0, 0, 0.2);
+
+  .preview{
+
+
   }
 
   h1{
     font-size: 26px;
   }
 
-}
+  .article-1{
+    background-color: white;
+    border-bottom: 4px solid rgba(0, 0, 0, 0.2);
+    min-height: 354px;
+  }
 
-.article-2,.article-3{
-  margin-left: 12px;
+  .article-2{
+    background-color: white;
+    border-bottom: 4px solid rgba(0, 0, 0, 0.2);
+    min-height: 354px;
+
+  }
+
+  .article-3{
+    background-color: white;
+    border-bottom: 4px solid rgba(0, 0, 0, 0.2);
+    min-height: 354px;
+    margin-bottom: 37px;
+  }
+
 }
 
 .skateboarders{
-  display: inline-block;
+
+  a{
+    border: 5px solid white;
+    max-width: 100%;
+  }
+
 }
 
 .lance{
-  height: 80px;
-  max-width: 33%;
+
+
+    min-height: 236px;
+
+
+}
+
+.rodney{
+
+  min-height: 236px;
+
 }
 
 .tommy{
-  height: 80px;
-  max-width: 33%;
+
+  min-height: 478px;
+
+}
+
+.steve{
+
+  min-height: 236px;
+
+}
+
+.contact-footer{
+  background-color: white;
 }
