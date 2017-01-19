@@ -6010,6 +6010,11 @@ a:hover, a:active {
   background-color: white;
   margin-bottom: 71px;
   padding-left: 39px; }
+  .left i {
+    font-size: 30px;
+    height: 30px;
+    width: 30px;
+    margin-left: 5px; }
 
 .right {
   height: 361px;
