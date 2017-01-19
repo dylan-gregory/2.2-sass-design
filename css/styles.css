@@ -5808,8 +5808,7 @@ button.close {
     display: none !important; } }
 .wrapper {
   position: relative;
-  background-image: url("/Users/Dylan/Documents/code/2.2-sass-design/skateboard-images/bg.jpg");
-  width: 2000px; }
+  background-image: url("/Users/Dylan/Documents/code/2.2-sass-design/skateboard-images/bg.jpg"); }
 
 .wrapper::before {
   content: '';
@@ -5880,6 +5879,10 @@ a:hover, a:active {
     height: 44px;
     vertical-align: middle;
     font-size: 20px; }
+
+.button::before {
+  content: "-";
+  color: white; }
 
 @media (max-width: 800px) {
   .nav-bar a {
@@ -6014,6 +6017,7 @@ a:hover, a:active {
 /*https://developer.mozilla.org/en-US/docs/Web/CSS/transform */
 @media (max-width: 800px) {
   .boards {
+    margin-top: 100px;
     transform: rotate(0.25turn); } }
 .scrolling-head-select {
   text-align: center;
@@ -6061,7 +6065,9 @@ a:hover, a:active {
 @media (max-width: 800px) {
   .left {
     color: white;
-    background-color: #B72631; }
+    background-color: #B72631;
+    margin-top: 100px;
+    margin-bottom: -200px; }
 
   .right {
     background-color: #B72631; }

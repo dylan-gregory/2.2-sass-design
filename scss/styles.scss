@@ -9,7 +9,7 @@ $gold: #FFCB07;
 .wrapper{
   position: relative;
   background-image: url('/Users/Dylan/Documents/code/2.2-sass-design/skateboard-images/bg.jpg');
-  width: 2000px;
+  //width: 2000px;
 }
 
 
@@ -104,6 +104,13 @@ a:hover, a:active { text-decoration: none; }
   }
 
 }
+
+.button::before{
+  content: "-";
+  color: white;
+
+}
+
 
 @media (max-width: 800px) {
   .nav-bar{
@@ -258,6 +265,7 @@ a:hover, a:active { text-decoration: none; }
 
 }
 
+
 .tommy{
   display: inline-block;
   background-image: url('/Users/Dylan/Documents/code/2.2-sass-design/skateboard-images/sk8er-2.png');
@@ -268,6 +276,18 @@ a:hover, a:active { text-decoration: none; }
 
 
 }
+
+// @media (min-width:800px) {
+//   .skateboarders{
+//
+//   .tommy{
+//     margin-top: 10px;
+//     margin-bottom: 10px;
+//     height: 150px;
+//
+//     }
+//   }
+// }
 
 .steve{
   display: inline-block;
@@ -317,7 +337,7 @@ a:hover, a:active { text-decoration: none; }
 
 @media (max-width:800px) {
   .boards{
-
+    margin-top: 100px;
     transform: rotate(.25turn);
 
 
@@ -396,10 +416,13 @@ a:hover, a:active { text-decoration: none; }
   .left{
     color: white;
     background-color: $uni-red;
+    margin-top: 100px;
+    margin-bottom: -200px;
   }
 
   .right{
     background-color: $uni-red;
+
   }
 
   .form-group .btn{
