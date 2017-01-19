@@ -1,6 +1,8 @@
 
 $grid-gutter-width: 10px;
 $uni-red: #B72631;
+$uni-blue:#435992;
+$gold: #FFCB07;
 
 @import "../bower_components/bootstrap-sass/assets/stylesheets/bootstrap";
 
@@ -73,6 +75,16 @@ a:hover, a:active { text-decoration: none; }
 
 }
 
+@media (max-width: 800px) {
+.social-box{
+
+  .facebook, .twitter , .rss , .youtube{
+    background-color: black;
+    color: white;
+    }
+}
+}
+
 .nav-bar{
   position: relative;
 
@@ -92,6 +104,21 @@ a:hover, a:active { text-decoration: none; }
   }
 
 }
+
+@media (max-width: 800px) {
+  .nav-bar{
+    a{
+      width: 100%;
+      background-color: $gold;
+    }
+    .button{
+      width: 100%;
+      background-color: $gold;
+    }
+  }
+
+}
+
 
 .scrolling-header{
   position: relative;
@@ -121,6 +148,12 @@ a:hover, a:active { text-decoration: none; }
   opacity: .2;
 
 
+}
+
+@media (max-width:800px) {
+    .scrolling-header{
+      border: 20px solid $uni-red;
+    }
 }
 
 
@@ -178,6 +211,17 @@ a:hover, a:active { text-decoration: none; }
 
 }
 
+@media (max-width:800px) {
+  .article-previews{
+    .article-1, .article-2, .article-3{
+      background-color: $uni-blue;
+      color: white;
+    }
+
+  }
+
+}
+
 
 .skateboarders{
   text-transform: uppercase;
@@ -186,7 +230,6 @@ a:hover, a:active { text-decoration: none; }
   font-size: 33px;
   font-weight: bold;
   text-align: center;
-  height: 478px;
   a{
     color: white;
   }
@@ -238,27 +281,47 @@ a:hover, a:active { text-decoration: none; }
 
 }
 
+
+@media (max-width:800px) {
+
+  .skateboarders{
+    .lance, .rodney, .tommy, .steve{
+      background-size: cover;
+    }
+
+
+  }
+
+}
+
+
 .boards{
-  height: 299px;
+  position: relative;
   background-color: white;
   padding-left: 50px;
   margin-top: 27px;
   margin-right: 10px;
-  position: relative;
   padding-top: 12px;
   padding-bottom: 23px;
 
-  a{
-    height: 299px;
-    width: 1150px;
-  }
-
   img{
+    position: relative;
     width: 62px;
     margin-left: 13px;
     margin-right: 26px;
   }
 
+}
+
+/*https://developer.mozilla.org/en-US/docs/Web/CSS/transform */
+
+@media (max-width:800px) {
+  .boards{
+
+    transform: rotate(.25turn);
+
+
+  }
 }
 
 .scrolling-head-select{
@@ -283,7 +346,7 @@ a:hover, a:active { text-decoration: none; }
 
 
     a{
-      
+
 
     }
 
@@ -308,4 +371,40 @@ a:hover, a:active { text-decoration: none; }
   margin-bottom: 71px;
   padding-top: 33px;
   padding-right: 29px;
+}
+
+
+.form-group{
+  text-align: right;
+
+  .btn{
+    color: white;
+    background-color: $uni-red;
+    text-align: center;
+    width: 248px;
+    height: 41px;
+    vertical-align: middle;
+    font-size: 20px;
+    margin-top: 29px;
+    letter-spacing: 2px;
+  }
+
+
+}
+
+@media (max-width: 800px) {
+  .left{
+    color: white;
+    background-color: $uni-red;
+  }
+
+  .right{
+    background-color: $uni-red;
+  }
+
+  .form-group .btn{
+    background-color: $gold;
+  }
+
+
 }

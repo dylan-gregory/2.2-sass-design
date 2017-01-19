@@ -5863,6 +5863,10 @@ a:hover, a:active {
     color: white;
     margin-right: 195px; }
 
+@media (max-width: 800px) {
+  .social-box .facebook, .social-box .twitter, .social-box .rss, .social-box .youtube {
+    background-color: black;
+    color: white; } }
 .nav-bar {
   position: relative; }
   .nav-bar a {
@@ -5877,6 +5881,13 @@ a:hover, a:active {
     vertical-align: middle;
     font-size: 20px; }
 
+@media (max-width: 800px) {
+  .nav-bar a {
+    width: 100%;
+    background-color: #FFCB07; }
+  .nav-bar .button {
+    width: 100%;
+    background-color: #FFCB07; } }
 .scrolling-header {
   position: relative;
   height: 361px;
@@ -5900,6 +5911,9 @@ a:hover, a:active {
   right: 0;
   opacity: .2; }
 
+@media (max-width: 800px) {
+  .scrolling-header {
+    border: 20px solid #B72631; } }
 .article-previews h1 {
   font-size: 28px;
   padding-top: 31px;
@@ -5933,14 +5947,17 @@ a:hover, a:active {
   min-height: 354px;
   margin-bottom: 10px; }
 
+@media (max-width: 800px) {
+  .article-previews .article-1, .article-previews .article-2, .article-previews .article-3 {
+    background-color: #435992;
+    color: white; } }
 .skateboarders {
   text-transform: uppercase;
   position: relative;
   color: white;
   font-size: 33px;
   font-weight: bold;
-  text-align: center;
-  height: 478px; }
+  text-align: center; }
   .skateboarders a {
     color: white; }
 
@@ -5977,23 +5994,27 @@ a:hover, a:active {
   width: 100%;
   margin-top: 6px; }
 
+@media (max-width: 800px) {
+  .skateboarders .lance, .skateboarders .rodney, .skateboarders .tommy, .skateboarders .steve {
+    background-size: cover; } }
 .boards {
-  height: 299px;
+  position: relative;
   background-color: white;
   padding-left: 50px;
   margin-top: 27px;
   margin-right: 10px;
-  position: relative;
   padding-top: 12px;
   padding-bottom: 23px; }
-  .boards a {
-    height: 299px;
-    width: 1150px; }
   .boards img {
+    position: relative;
     width: 62px;
     margin-left: 13px;
     margin-right: 26px; }
 
+/*https://developer.mozilla.org/en-US/docs/Web/CSS/transform */
+@media (max-width: 800px) {
+  .boards {
+    transform: rotate(0.25turn); } }
 .scrolling-head-select {
   text-align: center;
   height: 30px; }
@@ -6023,5 +6044,29 @@ a:hover, a:active {
   margin-bottom: 71px;
   padding-top: 33px;
   padding-right: 29px; }
+
+.form-group {
+  text-align: right; }
+  .form-group .btn {
+    color: white;
+    background-color: #B72631;
+    text-align: center;
+    width: 248px;
+    height: 41px;
+    vertical-align: middle;
+    font-size: 20px;
+    margin-top: 29px;
+    letter-spacing: 2px; }
+
+@media (max-width: 800px) {
+  .left {
+    color: white;
+    background-color: #B72631; }
+
+  .right {
+    background-color: #B72631; }
+
+  .form-group .btn {
+    background-color: #FFCB07; } }
 
 /*# sourceMappingURL=styles.css.map */
