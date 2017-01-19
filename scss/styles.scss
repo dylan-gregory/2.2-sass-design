@@ -31,31 +31,63 @@ a:hover, a:active { text-decoration: none; }
 
 .social-box{
   position: relative;
-  font-size: 30px;
-  text-align: right;
+  font-size: 35px;
+  text-align: center;
+  margin-bottom: 25px;
+  margin-top: 10px;
   i{
-
-  }
-  a{
-    background-color: blue;
-    height: 60px;
     width: 60px;
   }
 
+  a{
+    position: relative;
+    color: rgba(white,0.2);
+    padding-top: 10px;
+    padding-bottom: 10px;
+
+  }
+
+  .facebook{
+    background-color: #435992;
+  }
+
+  .rss{
+    background-color: #CE8F44;
+  }
+
+  .twitter{
+    background-color: #688EC2;
+  }
+
+  .youtube{
+    background-color: #B63631;
+  }
+
+  .subscribe{
+    font-size: 16px;
+    color: white;
+    margin-right: 195px;
+
+  }
 
 }
 
 .nav-bar{
   position: relative;
 
+  a{
+    color: white;
+    position: relative;
+    letter-spacing: 2px;
+  }
+
   .button{
+    position: relative;
     background-color: $uni-red;
     text-align: center;
-    font-weight: bold;
     height: 44px;
     vertical-align: middle;
-    font-size: 12px;
-    border-bottom: 4px solid rgba(0, 0, 0, 0.2);
+    font-size: 20px;
   }
 
 }
@@ -95,13 +127,37 @@ a:hover, a:active { text-decoration: none; }
 
 
   h1{
-    font-size: 26px;
+    font-size: 28px;
+    padding-top: 31px;
+    padding-left: 20px;
+    padding-right: 32px;
+  }
+
+  span{
+    font-size: 15px;
+    padding-left: 20px;
+    padding-bottom: 5px;
+  }
+
+  p{
+    font-size: 16px;
+    padding-left: 20px;
+    margin-top: 10px;
+    padding-right: 32px;
+  }
+
+  a{
+  color: $uni-red;
+   font-weight: bold;
+   font-size: 17px;
+   padding-left: 120px;
   }
 
   .article-1{
     background-color: white;
     border-bottom: 4px solid rgba(0, 0, 0, 0.2);
     min-height: 354px;
+
   }
 
   .article-2{
@@ -115,7 +171,8 @@ a:hover, a:active { text-decoration: none; }
     background-color: white;
     border-bottom: 4px solid rgba(0, 0, 0, 0.2);
     min-height: 354px;
-    margin-bottom: 37px;
+    margin-bottom: 10px;
+
   }
 
 }
@@ -205,7 +262,7 @@ a:hover, a:active { text-decoration: none; }
 
 .scrolling-head-select{
   text-align: center;
-  height: 69px;
+  height: 30px;
 }
 
 .radio-inline{
@@ -221,6 +278,7 @@ a:hover, a:active { text-decoration: none; }
   margin-top: 31px;
   background-color: white;
   margin-bottom: 71px;
+  padding-left: 39px;
 }
 
 .right{
