@@ -6131,5 +6131,27 @@ a:hover, a:active {
 
   .form-group .btn {
     background-color: #FFCB07; } }
+.tag {
+  background: #B72631;
+  display: inline-block;
+  height: 55px;
+  margin-left: 20px;
+  margin-top: 55px;
+  position: absolute;
+  left: -65px;
+  bottom: 1120px;
+  width: 100px;
+  transform: rotate(0.25turn); }
+
+.tag:before {
+  border-bottom: 35px solid #B72631;
+  border-left: 50px solid transparent;
+  border-right: 50px solid transparent;
+  content: "";
+  height: 0;
+  left: 0;
+  position: absolute;
+  top: -35px;
+  width: 0; }
 
 /*# sourceMappingURL=styles.css.map */
