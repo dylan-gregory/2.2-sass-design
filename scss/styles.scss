@@ -264,8 +264,7 @@ a:hover, a:active { text-decoration: none; }
 @media (max-width:800px) {
   .article-previews{
     .article-1, .article-2, .article-3{
-      background-color: $uni-blue;
-      color: white;
+
     }
 
   }
@@ -395,8 +394,7 @@ a:hover, a:active { text-decoration: none; }
 
 @media (max-width:800px) {
   .boards{
-    margin-top: 100px;
-    transform: rotate(.25turn);
+    // transform: rotate(.25turn);
 
 
   }
@@ -472,20 +470,9 @@ a:hover, a:active { text-decoration: none; }
 
 @media (max-width: 800px) {
   .left{
-    color: white;
-    background-color: $uni-red;
-    margin-top: 100px;
     margin-bottom: -200px;
   }
 
-  .right{
-    background-color: $uni-red;
-
-  }
-
-  .form-group .btn{
-    background-color: $gold;
-  }
 
 
 }
@@ -512,4 +499,11 @@ a:hover, a:active { text-decoration: none; }
   position: absolute;
   top: -35px;
   width: 0;
+}
+
+@media (max-width:800px) {
+
+  .tag{
+    display: none;
+  }
 }

@@ -5987,10 +5987,6 @@ a:hover, a:active {
   -moz-box-shadow: 0px 4px 0px 0px rgba(110, 110, 110, 0.71);
   box-shadow: 0px 4px 0px 0px rgba(110, 110, 110, 0.71); }
 
-@media (max-width: 800px) {
-  .article-previews .article-1, .article-previews .article-2, .article-previews .article-3 {
-    background-color: #435992;
-    color: white; } }
 .skateboarders {
   text-transform: uppercase;
   position: relative;
@@ -6072,10 +6068,6 @@ a:hover, a:active {
     margin-right: 26px; }
 
 /*https://developer.mozilla.org/en-US/docs/Web/CSS/transform */
-@media (max-width: 800px) {
-  .boards {
-    margin-top: 100px;
-    transform: rotate(0.25turn); } }
 .scrolling-head-select {
   text-align: center;
   height: 30px; }
@@ -6121,16 +6113,7 @@ a:hover, a:active {
 
 @media (max-width: 800px) {
   .left {
-    color: white;
-    background-color: #B72631;
-    margin-top: 100px;
-    margin-bottom: -200px; }
-
-  .right {
-    background-color: #B72631; }
-
-  .form-group .btn {
-    background-color: #FFCB07; } }
+    margin-bottom: -200px; } }
 .tag {
   background: #B72631;
   display: inline-block;
@@ -6153,5 +6136,9 @@ a:hover, a:active {
   position: absolute;
   top: -35px;
   width: 0; }
+
+@media (max-width: 800px) {
+  .tag {
+    display: none; } }
 
 /*# sourceMappingURL=styles.css.map */
